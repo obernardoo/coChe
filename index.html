@@ -22,7 +22,7 @@
 
 
         <a-entity id="persona">
-          <a-cylinder id="Cuerpo" constraint="target: #boxauto; type: lock;" position="-0.09 0 -0.63" scale="1.42 1 1" radius="0.09" height="0.14" color="#FFC65D" material="" geometry="radius: 0.09; height: 0.14"  rotation="90 0 0" dynamic-body"></a-cylinder>
+          <a-cylinder id="Cuerpo" position="-0.09 0 -0.63" scale="1.42 1 1" radius="0.09" height="0.14" color="#FFC65D" material="" geometry="radius: 0.09; height: 0.14"  rotation="90 0 0" static-body="sphereRadius: NaN""></a-cylinder>
           <a-sphere id="Cabeza" constraint="target: #Cuerpo; type: lock;" position="-0.09 0 -0.47" radius="0.08" color="#EF2D5E" material="" geometry="radius: 0.08" dynamic-body ></a-sphere>
           </a-entity>
 
