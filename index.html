@@ -20,9 +20,13 @@
         <a-box id="boxauto-arriba" position="0 0.6 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.87 0.2 1" static-body="sphereRadius: NaN"></a-box>
         <a-box id="boxauto-abajo" position="0 -0.6 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.87 0.2 1" static-body="sphereRadius: NaN"></a-box>
 
+        <a-cylinder position="0 0 -0.53" radius="0.5" height="1" color="#FFC65D" material="" geometry="radius: 0.15; height: 0.25" id="Cuerpo" rotation="90 0 0" static-body="sphereRadius: NaN"></a-cylinder>
+        <a-sphere position="0 0 -0.26" radius="0.5" color="#EF2D5E" material="" geometry="radius: 0.16" id="cabeza" static-body="sphereRadius: NaN"></a-sphere>
+
+
         <a-entity cursor="rayOrigin: mouse" position="0 0.3 -0.7">
           <a-cylinder position="0 0 0" radius="0.3" height="1" color="#FF2D00" material="color: #FF2D00" geometry="radius: 0.1; height: 0.2" id="Boton" rotation="90 0 0" static-body="sphereRadius: NaN" sound="src: url(assets\bocinaclaxon2.mp3); on: click"
-            event-set__down="_event: mousedown; material.color: #B42000; position: 0 0 -0.02"
+            event-set__down="_event: mousedown; material.color: #B42000; position: 0 0 -0.03"
             event-set__up="_event: mouseup; material.color: #FF2D00; position: 0 0 0">
           </a-cylinder>
           <!--sound="src: url(assets\bocinaclaxon.mp3); on: click" -->
