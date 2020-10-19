@@ -18,12 +18,12 @@
         <a-box id="boxauto-r" position="-0.4 0 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.2 0.87 1" static-body="sphereRadius: NaN"></a-box>
         <a-box id="boxauto-l" position="0.4 0 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.2 0.87 1" static-body="sphereRadius: NaN"></a-box>
         <a-box id="boxauto-arriba" position="0 0.6 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.87 0.2 1" static-body="sphereRadius: NaN"></a-box>
-        <a-box id="boxauto-abajo" position="0 -0.6 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.87 0.2 1" static-body="sphereRadius: NaN"></a-box>
+        <a-box id="boxauto-abajo"  position="0 -0.6 -0.4" height="1" width="1" rotation="" color="#4CC3D9" material="" geometry="" scale="0.87 0.2 1" static-body="sphereRadius: NaN"></a-box>
 
 
         <a-entity id="persona">
-        <a-cylinder position="-0.09 0 -0.63" scale="1.42 1 1" radius="0.09" height="0.14" color="#FFC65D" material="" geometry="radius: 0.09; height: 0.14" id="Cuerpo" rotation="90 0 0" static-body="sphereRadius: NaN"></a-cylinder>
-        <a-sphere position="-0.09 0 -0.48" radius="0.08" color="#EF2D5E" material="" geometry="radius: 0.08" id="cabeza" static-body="sphereRadius: NaN"></a-sphere>
+        <a-cylinder id="Cuerpo" position="-0.09 0 -0.63" scale="1.42 1 1" radius="0.09" height="0.14" color="#FFC65D" material="" geometry="radius: 0.09; height: 0.14"  rotation="90 0 0" static-body="sphereRadius: NaN"></a-cylinder>
+        <a-sphere id="Cabeza" constraint="target: #Cuerpo;" position="-0.09 0 -0.48" radius="0.08" color="#EF2D5E" material="" geometry="radius: 0.08" dynamic-body></a-sphere>
         </a-entity>
 
         <a-entity cursor="rayOrigin: mouse" position="0 0.3 -0.7">
