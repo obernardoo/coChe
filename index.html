@@ -22,8 +22,8 @@
 
         <a-entity cursor="rayOrigin: mouse" position="0 0.3 -0.7">
           <a-cylinder position="0 0 0" radius="0.3" height="1" color="#FFC65D" material="color: red" geometry="radius: 0.1; height: 0.2" id="Boton" rotation="90 0 0" static-body="sphereRadius: NaN" sound="src: url(assets\bocinaclaxon.mp3); on: click"
-            animation__mouseenter="property: components.material.material.color; type: color; from: red; to: blue; startEvents: mouseenter; dur: 500"
-            animation__mouseleave="property: components.material.material.color; type: color; from: blue; to: red; startEvents: mouseleave; dur: 500">
+            event-set__down="_event: mousedown; material.color: #7BC8A4"
+            event-set__up="_event: mouseup; material.color: #FFC65D">
           </a-cylinder>
         </a-entity>
 
