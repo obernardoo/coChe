@@ -32,11 +32,11 @@
               geometry="radius: 0.09; height: 0.14"
               rotation="90 0 0"
               static-body="sphereRadius: NaN">
-                <a-sphere id="pivot" position=" 0 0.066 0" radius="0.01" color="red" ></a-sphere>
+            <!--     <a-sphere id="pivot" position=" 0 0.062 0" radius="0.01" color="red" ></a-sphere> -->
           </a-cylinder>
 
           <a-sphere id="Cabeza" constraint="type: pointToPoint; target: #Cuerpo; pivot: 0 0.066 0; targetPivot: 0 -0.0666 0" position="-0.09 0 -0.47" radius="0.08" color="#EF2D5E" material="" geometry="radius: 0.08" dynamic-body >
-            <a-sphere id="targetPivot" position="0 -0.066 0"" radius="0.01" color="red" ></a-sphere>
+            <!-- <a-sphere id="targetPivot" position="0 -0.066 0"" radius="0.01" color="red" ></a-sphere> -->
           </a-sphere>
       </a-entity>
 
@@ -48,7 +48,7 @@
                       position="0 1 0"
                       scale="0.25 0.25 0.25"
                       static-body>
-                <a-sphere id="targetPivot2" position="0 0.122 0"" radius="0.01" color="blue" ></a-sphere>
+                <!-- <a-sphere id="targetPivot2" position="0 0.122 0"" radius="0.01" color="blue" ></a-sphere> -->
                </a-box>
                <a-sphere color="#F00"
                       position="0.125 0.875 0"
@@ -59,7 +59,7 @@
                                   target: #pointtopoint-target;
                                   pivot: 0 -0.122 0;
                                   targetPivot: 0 0.122 0">
-                 <a-sphere id="Pivot2" position="0 -0.122 0"" radius="0.01" color="blue" ></a-sphere>
+                 <!-- <a-sphere id="Pivot2" position="0 -0.122 0"" radius="0.01" color="blue" ></a-sphere> -->
                  </a-sphere>
              </a-entity>
 
