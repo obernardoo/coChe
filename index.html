@@ -9,7 +9,7 @@
 </head>
   <body>
     <a-scene physics">
-  <!-- <a-scene physics inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> -->
+<!-- <a-scene physics inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> -->
 
       <a-entity id="rig" position="0 1.8 0" rotation="0 0 0">
       <a-entity camera look-controls="hmdEnabled:  false;  touchEnabled:  false" >
@@ -22,25 +22,11 @@
 
 
        <a-entity id="persona">
-          <a-cylinder id="Cuerpo"
-              position="-0.09 0 -0.63"
-              scale="1.42 1 1"
-              radius="0.09"
-              height="0.14"
-              color="#FFC65D"
-              material="wireframe:  true"
-              geometry="radius: 0.09; height: 0.14"
-              rotation="90 0 0"
-              static-body="sphereRadius: NaN">
-                <!--   <a-sphere id="pivot" position=" 0 0.066 0" radius="0.01" color="red" ></a-sphere> -->
-          </a-cylinder>
+          <a-cylinder id="Cuerpo" position="-0.09 0 -0.63" scale="1.42 1 1" radius="0.09" height="0.14" color="#FFC65D" material="" geometry="radius: 0.09; height: 0.14"  rotation="90 0 0" static-body="sphereRadius: NaN""></a-cylinder>
+          <a-sphere id="Cabeza" constraint="target: #Cuerpo; type: lock;" position="-0.09 0 -0.47" radius="0.08" color="#EF2D5E" material="" geometry="radius: 0.08" dynamic-body ></a-sphere>
+          </a-entity>
 
-          <a-sphere id="Cabeza" constraint="type: pointToPoint; target: #Cuerpo; pivot: 0 -0.05 0; targetPivot: 0 -0.0666 0"  position="-0.09 0 -0.47" rotation="90 0 0" radius="0.08" color="#EF2D5E" material="wireframe:  true" geometry="radius: 0.08" dynamic-body  >
-          <!--   <a-sphere id="targetPivot" position="0 -0.066 0"" radius="0.01" color="red" ></a-sphere>   -->
-          </a-sphere>
-      </a-entity>
-<!--        -->
-
+<!--  usar esto!!
           <a-entity position="0 0 -1">
                <a-text value="Point to Point" position="0 1.5 0" align="center"></a-text>
                <a-box id="pointtopoint-target"
@@ -48,7 +34,6 @@
                       position="0 1 0"
                       scale="0.25 0.25 0.25"
                       static-body>
-                <!-- <a-sphere id="targetPivot2" position="0 0.122 0"" radius="0.01" color="blue" ></a-sphere> -->
                </a-box>
                <a-sphere color="#F00"
                       position="0.125 0.875 0"
@@ -59,10 +44,9 @@
                                   target: #pointtopoint-target;
                                   pivot: 0 -0.122 0;
                                   targetPivot: 0 0.122 0">
-                 <!-- <a-sphere id="Pivot2" position="0 -0.122 0"" radius="0.01" color="blue" ></a-sphere> -->
-                 </a-sphere>
+               </a-sphere>
              </a-entity>
-
+-->
 
 
 
